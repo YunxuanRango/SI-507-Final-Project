@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Keyword Graph Visualizer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Keyword Graph Visualizer</h1>
+            </div>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>Discover Food Trends and Discussions</h1>
+            <p>Enter keywords or select one from the list to see related discussions and trends.</p>
+        </div>
+    </section>
+    <section id="searchbox">
+        <div class="search-container">
+            <!-- Remove the action attribute and update the class -->
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" name="keywords" placeholder="Enter a food-related keyword..." required />
+                <div class="buttons-container">
+                    <input type="submit" value="Search" />
+                    <button id="keyword-button" type="button">Suggest Keywords</button>
+                </div>
+            </form>
+        </div>
+        <ul id="keyword-list"></ul> <!-- Positioned below the search container -->
+    </section>
+    <!-- Placeholder for the graph -->
+    <div id="graph-placeholder" class="graph-container"></div>
+    <script src="/static/js/script.js"></script>
+    
+    </body>
+    </html>

@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #50b3a2;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0; /* Adjust padding to your preference */
+    background-color: #e7e7e7; /* A neutral background color */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#searchbox {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-input {
+    width: 600px;
+    height: 30px;
+}
+
+
+#searchbox input[type="submit"], 
+#keyword-button {
+    padding: 10px 20px;
+    margin: 5px 0; /* Margin between buttons */
+    border: none;
+    background-color: #50b3a2;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text wrapping in buttons */
+}
+
+#keyword-button {
+    margin: 50px;
+    background-color: #e8491d; /* A contrasting color for the button */
+}
+
+#searchbox input[type="submit"]:hover, 
+#keyword-button:hover {
+    opacity: 0.9; /* Subtle hover effect */
+}
+
+#keyword-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto; /* Center the keyword list and add space from the search box */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#keyword-list li {
+    background-color: #ddd;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#keyword-list li:hover {
+    background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .buttons-container {
+        flex-direction: row; /* Side by side buttons on small screens */
+        justify-content: center; /* Center buttons horizontally */
+    }
+
+    #searchbox input[type="submit"], 
+    #keyword-button {
+        padding: 10px;
+        margin: 5px; /* Space around buttons */
+        flex-grow: 1; /* Buttons take up equal space */
+    }
+
+    #search-input {
+        margin-right: 0; /* Align input with buttons */
+        margin-bottom: 10px; /* Space between input and buttons container */
+    }
+}
+
+.graph-container {
+    height: 800px; /* Set the desired height here */
+}
