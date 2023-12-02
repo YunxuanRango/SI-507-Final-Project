@@ -2,15 +2,15 @@
 ## Analysis of Restaurant Reviews and Social Media Trends with Enhanced Retrieval
 
 ### 1. Introduction
-This project aims to develop a dining recommendation system by combining trending topics and keywords from online social media and restaurant review platforms. The objective is to offer users more accurate and up-to-date dining recommendations based on real-time data.
+This project develops a dining recommendation system by combining trending topics and keywords from online social media and restaurant review platforms, aiming to offer users more accurate and up-to-date dining recommendations based on real-time data.
 
-### 2. How to run this project?
-**Enter this in your terminal: python app.py**
+### 2. How to Run This Project
+**Command to run in the terminal:** `python app.py`
 
 #### Required Python Packages
 
 1. **networkx**: For creating and manipulating complex networks.
-2. **plotly**: Graphing library for making interactive, publication-quality graphs online.
+2. **plotly**: A graphing library for making interactive, publication-quality graphs online.
 3. **praw**: Python Reddit API Wrapper, for interacting with Reddit's API.
 4. **requests**: For sending HTTP requests.
 5. **requests_cache**: Provides a transparent cache for `requests`.
@@ -25,25 +25,25 @@ This project aims to develop a dining recommendation system by combining trendin
 
 ### 3. Data Sources
 
-#### Web Crawling:
-Utilizing `BeautifulSoup` and `Scrapy`, we extracted trending topics and keywords from food blogs and restaurant review websites. This process is crucial for capturing current trends in the culinary world.
+#### Web Crawling
+Trending topics and keywords were extracted from food blogs and restaurant review websites using `BeautifulSoup` and `Scrapy`, capturing current trends in the culinary world.
 
-#### Yelp Fusion API:
-We integrated the Yelp Fusion API to search for restaurants using keywords from our web crawling. The dataset includes restaurant names, ratings, review counts, and user comments, essential for our recommendation logic.
+#### Yelp Fusion API
+The Yelp Fusion API was used to search for restaurants with the obtained keywords. This dataset includes names, ratings, review counts, and user comments, crucial for the recommendation logic.
 
-#### Reddit API:
-We also incorporated Reddit discussions to deepen our data analysis. To manage API rate limits and enhance the efficiency of our data retrieval, we implemented a caching mechanism. This ensures that frequently requested data is stored locally, reducing the number of API calls and speeding up the application's response time.
+#### Reddit API
+Reddit discussions were integrated to enhance the data analysis. A caching mechanism was implemented to manage API rate limits and improve data retrieval efficiency, storing frequently requested data locally to reduce API calls and speed up response time.
 
 ### 4. Data Structure
 
-Our data is structured into a graph format, where nodes represent individual restaurants and discussions. Edges indicate relationships based on shared keywords and sentiments, facilitating the visualization of connections and powering our recommendation algorithms.
+The data is structured in a graph format, with nodes representing individual restaurants and discussions. Edges indicate relationships based on shared keywords and sentiments, aiding in the visualization of connections and supporting the recommendation algorithms.
 
 ### 5. Interaction and Presentation Plans
 
-The "Keyword Graph Visualizer," a Flask-based web application, is our user interaction platform. It allows users to input or select keywords, displaying a network graph of related restaurants and discussions. This interactive graph helps users explore new dining experiences tied to current trends.
+The "Keyword Graph Visualizer," a Flask-based web application, is the platform for user interaction. It allows users to input or select keywords, displaying a network graph of related restaurants and discussions, enabling users to explore new dining experiences linked to current trends.
 
 ### Main Page Layout
 
-The main page now features pre-generated keywords and lists recommended restaurants based on a similarity score. This enhancement improves user experience by providing immediate, relevant recommendations.
+The main page features pre-generated keywords and lists recommended restaurants based on a similarity score, providing immediate, relevant recommendations.
 
 ![Main Page Screenshot](https://github.com/YunxuanRango/SI-507-Final-Project/assets/150485789/f368ae39-d7d2-4d13-80db-91921a0d754e)
