@@ -23,7 +23,6 @@ This project aims to develop a dining recommendation system by combining trendin
 12. **setuptools**: To easily download, build, install, upgrade, and uninstall Python packages.
 13. **nltk**: Natural Language Toolkit, for building Python programs to work with human language data.
 
-
 ### 3. Data Sources
 
 #### Web Crawling:
@@ -33,7 +32,7 @@ Utilizing `BeautifulSoup` and `Scrapy`, we extracted trending topics and keyword
 We integrated the Yelp Fusion API to search for restaurants using keywords from our web crawling. The dataset includes restaurant names, ratings, review counts, and user comments, essential for our recommendation logic.
 
 #### Reddit API:
-We also incorporated Reddit discussions to deepen our data analysis, focusing on posts with high engagement metrics to reflect the most current and popular food-related trends. Caching has been implemented to optimize data retrieval.
+We also incorporated Reddit discussions to deepen our data analysis. To manage API rate limits and enhance the efficiency of our data retrieval, we implemented a caching mechanism. This ensures that frequently requested data is stored locally, reducing the number of API calls and speeding up the application's response time.
 
 ### 4. Data Structure
 
